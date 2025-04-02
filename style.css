@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Demo - Giao diện tĩnh</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .notification {
+            color: green;
+            font-weight: bold;
+            display: none;
+        }
+        .input-group {
+            margin: 20px 0;
+        }
+        input {
+            padding: 10px;
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .send-btn, .show-btn {
+            padding: 10px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .send-btn:hover, .show-btn:hover {
+            background: #0056b3;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .data-table th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Demo - Giao diện tĩnh</h1>
+        <p class="notification" id="notification">Dữ liệu đã được lưu thành công!</p>
+        <p class="latest-message">Dữ liệu mới nhất: <span id="latest-message">Chưa có dữ liệu nào</span></p>
+        <div class="input-group">
+            <input type="text" id="inputValue" placeholder="Nhập dữ liệu...">
+            <button class="send-btn">Gửi</button>
+            <button class="show-btn">Hiển thị dữ liệu</button>
+        </div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Nội dung</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dữ liệu mẫu</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dữ liệu mẫu khác</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
